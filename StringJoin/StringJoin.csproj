@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <GenerateAppxPackageOnBuild>true</GenerateAppxPackageOnBuild>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+</Project>
