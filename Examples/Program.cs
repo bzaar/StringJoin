@@ -1,21 +1,12 @@
 ﻿var sales = new[] {
-    new Sale(100, new Customer(1, "Bob")),
-    new Sale(200, new Customer(2, "Jane")),
+    new {Amount = 100, Customer = new {Id = 1, Name = "Bob"}},
+    new {Amount = 200, Customer = new {Id = 2, Name = "Jane"}},
+    new {Amount = 150, Customer = new {Id = 3, Name = "Alice"}},
 };
 
-string topCustomers = string.Join(", ", 
-    sales
+string top3Customers = string.Join(", ", sales
         .GroupBy(s => s.Customer.Id)
         .OrderByDescending(g => g.Sum(sale => sale.Amount))
-        .Take(3)
-        .Select(g => g.First().Customer));
+        .Take(3));
 
-Console.WriteLine(topCustomers);
-
-class Customer(int id, string name)
-{
-    public int Id { get; } = id;
-    public string Name { get; } = name;
-}
-
-record Sale(decimal Amount, Customer Customer);
+Console.WriteLine(top3Customers);

@@ -6,7 +6,7 @@ public class JoinTests
     public void ThrowsWhenIEnumerableIsNull()
     {
         Assert.Throws<ArgumentNullException>(() => 
-            StringExtensions.Join(null!, "")
+            EnumerableStringExtensions.Join(null!, "")
         );
     }
     

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace StringJoin;
 
-public static partial class StringExtensions
+public static class EnumerableStringExtensions
 {
     /// <summary>
     /// Joins strings into one string, inserting delimiters in between the strings.

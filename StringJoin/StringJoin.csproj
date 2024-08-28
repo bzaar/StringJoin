@@ -11,6 +11,10 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <Keyword>join</Keyword>
+        <Keyword>string</Keyword>
+        <Description>Provides an extension method to join an IEnumerable&lt;string&gt; into one string. A type-safe alternative to string.Join().</Description>
+        <Authors>morpher</Authors>
      </PropertyGroup>
 
     <ItemGroup>
